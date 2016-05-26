@@ -12,5 +12,8 @@
 */
 
 $app->get('/', function () use ($app) {
+    echo 212121;
     return $app->version();
 });
+
+$app->get('detailApply', 'IndexController@detailApply');
